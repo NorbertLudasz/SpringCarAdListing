@@ -1,0 +1,25 @@
+dependencies {
+    implementation project(':lnim2044-backend')
+    // implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.3'
+    // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+    // runtimeOnly group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.4'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    runtimeOnly group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'edu.bbte.idde.lnim2044'
+            artifactId = 'lnim2044-backend'
+            version = '1.0.0-SNAPSHOT'
+            from components.java
+        }
+    }
+}
+
+apply plugin: 'application'
+
+application {
+    mainClassName = 'edu.bbte.idde.book.desktop.Main'
+}
