@@ -1,0 +1,6 @@
+rootProject.name = 'lab-lnim2044'
+include 'lnim2044-backend'
+include 'lnim2044-desktop'
+include 'lnim2044-web'
+include 'lnim2044-spring'
+

@@ -1,0 +1,20 @@
+allprojects {
+    group = 'edu.bbte.idde.lnim2044'
+    version = '1.0-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+    apply from: "${rootDir}/lint.gradle"
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+        //implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.3'
+        // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+        //runtimeOnly group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.4'
+
+    }
+}

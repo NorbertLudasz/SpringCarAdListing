@@ -1,0 +1,8 @@
+daoType: jdbc
+jdbcUser: root
+jdbcPassword: root
+jdbcDatabase: CarAdsDB
+jdbcUrl: localhost:3306
+jdbcPoolSize: 10
+logQueries: false
+logUpdates: true
