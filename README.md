@@ -13,5 +13,4 @@
 - Has three distinct profiles: one using an in-memory DAO, one using JDBC, and finally one using JPA and Hibernate
 - Profiles are set based on the contents of yml files
 - For the JDBC profile, implemented CRUD functions for two different models following DRY principles, and used pooling with HikariCP for database connection
-- Created exception-handling controllers 
-A Java/Spring project using gradle, models, DAOs, controllers, JDBC, JPA, yml and ftl to manage a listing of car advertisements for sale, and their owners. Has filtering and authentication too. Originally on GitLab, transferred it to GitHub.
+- Created exception-handling controllers
